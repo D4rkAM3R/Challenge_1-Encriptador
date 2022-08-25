@@ -1,0 +1,538 @@
+body{
+    width: 1920px;    
+    font-family: "Inter", "sans-serif";
+    font-weight: 400;
+    font-size: 32px;
+    background-color:#E5E5E5;
+    color: #343A40;
+}
+
+header{
+    margin-top: 40px;
+}
+
+.logo-alura{
+ 
+    height: 50px;
+    
+}
+
+.contenido-principal{
+    
+    display: flex;
+    width: 960px; 
+    margin: 10px auto;
+    justify-content: space-around;             
+}
+
+
+.ingresarMensaje{
+    font-family: "Inter", "sans-serif";  
+    margin-top: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 720px;
+    height: 400px;
+    font-size: 25px;
+    color: red
+}
+
+textarea::placeholder{
+    font-family: "Inter", "sans-serif";    
+    color: #0A3871;
+}
+
+.exclamacion-signo, .exclamacion-texto{
+    
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+
+}
+
+.botones{
+    display: flex;   
+    margin-top: 20px; 
+}
+
+.boton-encriptar{       
+    width: 40%;
+    padding: 25px;
+    font-size: 50%;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;    
+}
+
+.boton-encriptar:hover{
+    background: #072B61;
+}
+
+.boton-encriptar:active{
+    transform: scale(0.95);
+}
+
+.boton-desencriptar{   
+    margin-left: 60px;
+    cursor: pointer;
+    width: 40%;
+    padding: 25px;
+    font-size: 50%;
+    background-color:  white;
+    color:#0A3871;
+    border-radius: 24px;
+    border: 0.5px solid #0A3871 
+       
+}
+
+.boton-desencriptar:hover{
+    background: #EFF1FA
+}
+
+.boton-desencriptar:active{
+    transform: scale(0.95);
+}
+
+.resultado-area-texto{
+    position: relative;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 960px;
+    height: 600px;
+    margin-top: 10px;    
+    margin-left: 80px;
+    border-radius: 15px;
+    box-shadow: 12px 12px 30px #0A3871;
+    background-color: #FFFFFF;     
+}    
+
+.resultado-texto{  
+    font-family: "Inter", "sans-serif";
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 30px;
+    border: 10px;
+    outline: 5px;
+    resize: none;
+    background: none;
+    width: 910px;
+    height: 390px;
+    text-align: center;
+    text-align: top;  
+    background-image: url("imagenes/Muñeco.svg");
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#ningunMensaje{
+    margin-left: 280px;
+    font-weight: 700px;
+    font-size: 24px;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+#ingreseTexto{
+    margin-top: 10px;
+    margin-left: 270px;
+    font-size: 16px;
+    color: #495057;
+    line-height: 150%;
+}
+
+.botonCopy{
+    visibility: hidden;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 420px;
+    font-size: 50%;
+    width: 30%;
+    padding: 25px;
+    font-size: 50%;
+    background-color: white;
+    color:#0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871
+      
+}
+
+.botonCopy:hover{
+    background: #EFF1FA
+}
+
+.botonCopy:active{
+    transform: scale(0.95);
+}
+
+footer{
+    width: 1920px;
+    margin: 10px auto; 
+    padding: 10px 0;      
+}
+
+.elaboradoPor{
+    text-align: center;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.autor{
+    padding: 6px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.redes-contacto {
+    display: flex;
+    justify-content: center;
+    margin: 30px 60px;     
+}
+
+a img{
+    height: 50px;
+}
+
+
+@media (max-width: 1280px){
+
+    body{
+        width: 1280px;          
+    }
+
+    header{
+        margin-top: 30px;
+    }
+
+    .contenido-principal{
+        display: flex;
+        width: 100%;
+        margin: 10px 50px;
+        justify-content: space-around;         
+    }
+
+    .ingresarMensaje{
+        width: 100%;
+    }
+
+    .boton-encriptar{       
+        margin-left: 0px;
+        width: 60%;         
+    }    
+   
+    .boton-desencriptar{   
+        margin-left: 20px;
+        width: 60%;            
+    }
+    
+    .resultado-area-texto{
+        width: 80%;
+        margin-top: 10px;    
+        margin-left: 40px;
+    }
+
+    .resultado-texto{  
+        width: 75%;
+        margin-top: 50px;
+        margin-left: 60px;
+        font-size: 30px;       
+    }
+  
+    #ningunMensaje{
+        margin-top: 5px;
+        margin-left: 180px;
+        font-weight: 700px;
+        font-size: 24px;
+        color: #0A3871;
+        font-weight: bold;
+    }
+    
+    #ingreseTexto{
+        margin-top: 10px;
+        margin-left: 170px;
+        font-size: 16px;
+        color: #495057;
+        line-height: 150%;
+    }
+
+    .resultado-texto{
+        width: 80%;
+    }
+
+    .botonCopy{
+        
+        margin-top: 30px;
+        margin-left: 310px;
+        font-size: 50%;
+        width: 30%;
+        padding: 25px;
+            
+        }
+
+    .elaboradoPor{
+        padding: 3px;
+    }
+
+    .autor{
+        padding: 3px;
+       
+    }
+    
+    .redes-contacto {
+        display: flex;
+        justify-content: center;
+        margin: 15x 30px;     
+    }
+
+    footer{
+        margin: 0px;       
+        width: 100%;
+        padding: 1px;
+    }
+
+    a img{
+        height: 40px;
+    }
+}
+
+
+/*iPad*/
+
+@media (max-width: 768px){ 
+
+    body{
+        width: 768px;          
+    }
+
+    header{
+        margin-top: 30px;
+    }
+
+    .contenido-principal{       
+        display: block;
+        justify-content: center;
+        width: 80%;      
+        margin: 3px 75px;
+                
+    }
+
+    .ingresarMensaje{
+        width: 100%;
+        height: 70%;
+        margin: 30px 10px;
+    }
+
+    .boton-encriptar{       
+        margin-left: 35px;
+        width: 40%;
+        padding: 25px;
+        font-size: 70%;
+        background-color: #0A3871;
+        color: #FFFFFF;
+        border-radius: 24px;
+        border: none;    
+    }       
+    
+    .boton-desencriptar{   
+        margin-left: 60px;
+        width: 40%;
+        padding: 25px;
+        font-size: 70%;
+        background-color:  white;
+        color:#0A3871;
+        border-radius: 24px;
+        border: 0.5px solid #0A3871    
+    }    
+   
+    .resultado-area-texto{
+        margin: 10px;
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .resultado-texto{
+        margin-top: 7px;
+        background-position: center;
+        background-size: 70%;
+        width: 80%;
+        height: 380px;
+    }
+
+    #ningunMensaje{
+        margin-top: 20px;
+        margin-left: 120px;
+        font-weight: 700px;
+        font-size: 24px;
+        color: #0A3871;
+        font-weight: bold;
+    }
+    
+    #ingreseTexto{
+        margin-top: 10px;
+        margin-left: 110px;
+        font-size: 16px;
+        color: #495057;
+        line-height: 150%;
+    }
+
+    .botonCopy{        
+        margin-top: 10px;
+        margin-left: 222px;
+        font-size: 50%;
+        width: 30%;
+        padding: 25px;            
+    }
+      
+
+    .elaboradoPor{
+        padding: 10px;
+        height: 70%;
+    }
+
+    .autor{
+        padding: 3px;
+       
+    }
+    
+    .redes-contacto {
+        display: flex;
+        justify-content: center;
+        margin: 15x 30px;     
+    }
+
+    footer{
+        padding:  10px;       
+        width: 100%;
+        padding: 1px;
+    }
+
+    a img{
+        height: 30px;
+    }
+}
+
+/*iPhone X*/
+
+@media (max-width: 375px){ 
+
+    body{
+        width: 180%;          
+    }
+
+    header{
+        margin-top: 10px;
+    }
+
+    .logo-alura{ 
+        height: 40px;        
+    }
+
+    .contenido-principal{       
+        display: block;
+        justify-content: center;
+        width: 50%;      
+        margin: 5px 10px;                
+    }
+
+    .ingresarMensaje{
+        font-size: 14px;
+        width: 100%;
+        height: 70%;
+        margin: 30px 10px;
+    } 
+
+    .exclamacion-signo, .exclamacion-texto{
+         
+        font-size: 10px;    
+    
+    }
+
+    .boton-encriptar{   
+      
+        margin-left: 5px;
+        width: 100%;
+        padding: 25px;
+        font-size: 70%;
+         
+    }       
+    
+    .boton-desencriptar{   
+        margin-left: 20px;
+        width: 100%;
+        padding: 25px;
+        font-size: 70%;
+            
+    }    
+   
+    .resultado-area-texto{
+        margin: 10px;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .resultado-texto{
+        font-size: 14px;
+        margin-top: 7px;
+        margin-left: 30px;
+        background-position: center;
+        background-size: 70%;
+        width: 80%;
+        height: 180px;
+    }
+
+    #ningunMensaje{
+        margin-top: 10px;
+        margin-left: 25px;
+        font-weight: 700px;
+        font-size: 18px;
+        color: #0A3871;    
+    }
+    
+    #ingreseTexto{
+        margin-top: 10px;
+        margin-left: 24px;
+        font-size: 12px;
+        color: #495057;
+        line-height: 150%;
+    }
+
+    .botonCopy{        
+        margin-top: 10px;
+        margin-left: 11px;
+        font-size: 60%;
+        width: 100%;
+        padding: 25px;            
+    }      
+
+    footer{
+        margin-left: 5px;
+        padding:  5px;       
+        width: 55%;       
+    }
+
+    .elaboradoPor{
+        margin-left: 5px;
+    }            
+
+    .autor{
+        padding: 1px;       
+    }
+    
+    .redes-contacto {
+        display: flex;
+        justify-content: center;
+        margin: 15px 30px;     
+    }  
+
+    a img{
+        height: 30px;
+    }
+}

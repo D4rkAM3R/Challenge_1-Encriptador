@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="icon" href="imagenes/warlock.ico" type="x-icon">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>ENCRIPTADOR - Challenge 1</title>
+        
+    </head>
+
+    <body>
+
+       <header class="encabezado">        
+            <h1><img class="logo-alura" src="imagenes/logoalura.png" alt="logo Alura"></h1>
+       </header>
+    
+        <main class="contenido-principal">
+            <section>
+
+                <div class="bloque-encriptador">
+                    <textarea class="ingresarMensaje" cols="40" rows="6" placeholder="Ingrese el mensaje aquí"></textarea>
+                </div>
+
+                <div>
+                    <img class="exclamacion-signo" src="imagenes/exclamacion.png" alt="signo de exclamacion"><h5 class="exclamacion-texto">Solo letras minúsculas y sin acentos</h5>
+                </div>
+                                
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+
+                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>    
+                
+            </section>
+
+            <section>
+                
+                <div class="resultado-area-texto">
+                    <textarea class="resultado-texto" cols="80" rows="2" placeholder=""></textarea>
+
+                    <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
+
+                    <p id="ingreseTexto">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+
+                <div class="boton-copiar">
+                    <input onclick = "copyToClipBoard()" id="botonCopiar" class="botonCopy" type="button" value="Copiar">
+                </div>
+                
+            </section>
+    
+        </main>       
+    
+        <footer>
+            <h4 class="elaboradoPor">Elaborado por:</h3>
+            <h2 class="autor">D4rk4M3R ©2022</h2>
+
+            <section class="redes-contacto">
+
+                <div class="logosFooter">
+                    <a href="https://www.linkedin.com/in/darkamer" target="_blank"><img class="redes" src="imagenes/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/D4rkAM3R/" target="_blank"><img class="redes" src="imagenes/github.png" alt="git"></a>
+                    <a href="https://twitter.com/darkamer" target="_blank"><img class="redes" src="imagenes/twitter.png" alt="twiter"></a>
+            
+        </footer>
+
+        <script src="script.js"></script>  
+
+    </body>
